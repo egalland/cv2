@@ -1,7 +1,20 @@
 body {
-    padding: 0;
-    margin: 0;
-    background-color: grey;
+  padding: 0;
+  margin: 0;
+  background:url('../images/adventure-astro-astrophotography-1009136.jpg') -25px -50px;
+  top:0;
+  width:100%;
+  z-index:0;
+  height:100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#startPageCarousel, #skills{
+  background: rgba(255,255,255,.3);
+  border-radius:5px;
+  border:1px solid rgba(255,255,255,.3);
+  text-shadow:0 1px 1px rgba(0,0,0,.4);
 }
 .firstCarouselImage{
 background: url("../images/projetNasa.png");
@@ -28,7 +41,7 @@ background: url("../images/storageWar.jpg");
   width: 100%;
   height: 60vh;
 }
-/*.gridTile {
+.gridTile {
     top: 0;
     left: 0;
     width: 100%;
@@ -36,26 +49,29 @@ background: url("../images/storageWar.jpg");
     position: absolute;
     background: url("../images/gridtile.png") repeat;
     z-index: 100;
-} */
-.carousel-indicators {
+} 
+.carousel-indicators{
   z-index: 2000;
   position: relative;
-  top: 20px;
+  top: 10px;
 }
-.item1{
-  height: 10px;
+.carousel-indicators li{
+  height: 6px;
+  padding: 0 10%;
 }
 .progressBar {
   height: 10px;
   width: 100%;
-  margin: -10px 0 0 0;
+  margin: -8px 0 0 0;
   border: none;
   z-index: 1;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3px;
 }
 .carousel-control-prev, .carousel-control-next{
   z-index: 101;
+  padding-top: 60vh;
 }
 .carousel-caption{
   z-index: 1001;
